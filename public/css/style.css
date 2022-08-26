@@ -1,0 +1,112 @@
+body{
+    background-color:lightblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(21, 110, 139)    ;
+}
+
+h1{
+    margin-top: 2em;
+    color: rgb(21, 110, 139);
+    text-align: center;
+}
+
+.name{
+    color: rgb(21, 110, 139);
+    display: flex;
+    justify-content: center;
+}
+
+.nameEntered{
+    margin: 1em;
+    border-radius: 10px;
+    /* color: lightblue; */
+}
+
+.Language{
+    color: rgb(21, 110, 139);
+    display: flex;
+    justify-content: center;
+}
+
+.eng{
+    display: flex;
+    margin-right: 10px;
+}
+
+
+.ger{
+    display: flex;
+    margin-right: 10px;
+}
+
+
+
+.esp{
+    display: flex;
+} 
+
+ 
+
+/* .radio{
+    margin: 20px;
+} */
+
+.btn{
+    text-align: center;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.message{
+    color: rgb(21, 110, 139);
+    text-align: center;
+    font-size: xx-large;
+}
+
+.counter{
+    color: rgb(21, 110, 139);
+    margin-top: 30px;
+}
+
+.resets{
+    display: flex;
+}
+
+.btn2{
+    text-align: center;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.buttons{
+    margin-left: 390px;
+    margin-right: 91px;
+    display: flex;
+}
+
+.error {
+    color: rgb(163, 35, 35);
+
+}
+
+
+@media only screen and (max-width: 1440px){
+
+    .buttons{
+        margin-left: 590px;
+    }
+} 
+
+@media only screen and (max-width: 1024px){
+
+    .buttons{
+        margin-left: 385px;
+    }
+} 
+
+@media only screen and (max-width: 600px){
+
+    .buttons{
+        margin-left: 95px;
+    }
+} 

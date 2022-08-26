@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greet</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+
+<body>
+    <div class="content">
+        <h1>Greet</h1>
+        <form action="/greetings" method="GET">
+            <div class="name">
+                <h2>Name:</h2>
+                <input type="text" name="text" class="nameEntered" value="" placeholder="Please Enter Name Here">
+            </div>
+
+            <div class="Language">
+                <div class="eng">
+                    <input type="radio" name="TheLanguage" value="eng" class="radio" class="englishRadio">
+                    <h4>English</h4>
+                </div>
+                <div class="ger">
+                    <input type="radio" name="TheLanguage" value="ger" class="radio" class="germanRadio">
+                    <h4>German</h4>
+                </div>
+                <div class="esp">
+                    <input type="radio" name="TheLanguage" value="esp" class="radio" class="espRadio">
+                    <h4>Spanish</h4>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div class="btn">
+                    <button class="greetButton" type="submit" name="greetMe" value="Greet Me">Greet Me</button>
+                </div>
+
+                <div class="resets">
+                    <div class="counter"> 0 </div>
+                    <div class="btn2">
+                        <button class="reset" type="button" name="counter" value="Greet Me">Reset </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="message">
+                Hi! ...
+            </div>
+        </form>
+
+
+    </div>
+
+    <script src="./tests/greet.js"></script>
+    <script src="greet.dom.js"></script>
+</body>
+
+</html>
