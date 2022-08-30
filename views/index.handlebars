@@ -12,9 +12,13 @@
 <body>
     <div class="content">
         <h1>Greet</h1>
-        <form action="/greetings" method="GET">
+        <form action="/greetings" method="POST">
+        <div class="errorMessage">
+            {{error}}
+        </div>
             <div class="name">
                 <h2>Name:</h2>
+                 
                 <input type="text" name="text" class="nameEntered" value="" placeholder="Please Enter Name Here">
             </div>
 
@@ -39,7 +43,7 @@
                 </div>
 
                 <div class="resets">
-                    <div class="counter"> 0 </div>
+                    <div class="counter"> {{counter}} </div>
                     <div class="btn2">
                         <button class="reset" type="button" name="counter" value="Greet Me">Reset </button>
                     </div>
@@ -47,8 +51,14 @@
             </div>
 
             <div class="message">
-                Hi! ...
+                {{message}}
+               
             </div>
+
+            <div class="greeted">
+                <a href="/greeted">Greeted</a>
+            </div>
+
         </form>
 
 

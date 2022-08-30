@@ -10,6 +10,12 @@ h1{
     text-align: center;
 }
 
+.errorMessage{
+    color: rgb(202, 96, 96);
+    text-align: center;
+    /* font-size: xx-large; */
+}
+
 .name{
     color: rgb(21, 110, 139);
     display: flex;
@@ -84,16 +90,37 @@ h1{
     display: flex;
 }
 
-.error {
+/* .error {
     color: rgb(163, 35, 35);
 
+} */
+
+.greeted{
+    text-align: center;
 }
 
+.greeted a {
+    padding: 0.4em;
+    width: 2em;
+    text-decoration: none;
+    color: rgb(21, 110, 139);
+}
+
+.greeted a:hover {
+    background-color : #5d8590;
+}
 
 @media only screen and (max-width: 1440px){
 
     .buttons{
         margin-left: 590px;
+    }
+} 
+
+@media only screen and (max-width: 1300px){
+
+    .buttons{
+        margin-left: 520px;
     }
 } 
 
