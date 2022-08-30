@@ -65,9 +65,9 @@ app.get("/greeted", function (req, res) {
 });
 
 app.get("/counter/:name", function (req, res) {
-  req.params
+  const nameCount = req.params.nameCount
   res.render('counter',{
-    
+    nameCount
   })
 });
 
