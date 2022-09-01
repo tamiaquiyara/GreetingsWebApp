@@ -13,12 +13,15 @@
     <div class="content">
         <h1>Greet</h1>
         <form action="/greetings" method="POST">
-        <div class="errorMessage">
-            {{error}}
-        </div>
+            <div class="errorMessage" id="infoMessage">
+                {{#if messages}}
+                 {{messages.error}} 
+                {{/if}}
+            </div>
+            <script type="text/javascript">window.setTimeout("document.getElementById('infoMessage').style.display='none';", 2000); </script>
             <div class="name">
                 <h2>Name:</h2>
-                 
+
                 <input type="text" name="text" class="nameEntered" value="" placeholder="Please Enter Name Here">
             </div>
 
@@ -52,11 +55,11 @@
 
             <div class="message">
                 {{message}}
-               
+
             </div>
 
             <div class="greeted">
-                <a href="/greeted">Greeted</a>
+                <a href="/greeted">Greeted Names</a>
             </div>
 
         </form>
@@ -64,7 +67,8 @@
 
     </div>
 
-    {{!-- <script src="./tests/greet.js"></script>
+    {{!--
+    <script src="./tests/greet.js"></script>
     <script src="greet.dom.js"></script> --}}
 </body>
 

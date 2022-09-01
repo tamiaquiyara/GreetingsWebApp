@@ -10,6 +10,17 @@ h1{
     text-align: center;
 }
 
+a {
+    padding: 0.4em;
+    width: 2em;
+    text-decoration: none;
+    color: rgb(21, 110, 139);
+}
+
+a:hover {
+    background-color : #5d8590;
+}
+
 .errorMessage{
     color: rgb(202, 96, 96);
     text-align: center;
