@@ -18,7 +18,7 @@
             </tr>
             {{#each greetedNames}}
             <tr>
-                <td>{{@key}}</td>
+                <td><a href="/counter/{{@key}}" style="text-decoration:none;">{{@key}}</a></td>
             </tr>
             {{/each}}
         </table>
