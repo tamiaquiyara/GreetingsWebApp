@@ -81,6 +81,11 @@ module.exports = function Greetings(list) {
         return nameProperty.length
     }
 
+    function reset(){
+    
+        
+    }
+
     return {
         greet,
        // setNames,
@@ -90,6 +95,7 @@ module.exports = function Greetings(list) {
         nameWithoutChar,
         storingNames,
         error,
-        personsCount
+        personsCount,
+        reset
     }
 }

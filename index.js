@@ -60,6 +60,7 @@ app.post("/greetings", function (req, res) {
   // }
 
   let namesCounted = greetings.nameCount()
+  let resetting = greetings.reset()
   // console.log(namesCounted);
   // console.log(msg);
   // console.log(errorMsg);
@@ -67,6 +68,7 @@ app.post("/greetings", function (req, res) {
     message: msg,
     counter: namesCounted,
     error: greeterr,
+    reset: resetting
   });
 });
 
